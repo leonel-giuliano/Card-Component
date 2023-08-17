@@ -1,0 +1,51 @@
+@use '../abstracts/variables';
+
+@font-face {
+    font-family: 'Kumbh Sans';
+    font-display: swap;
+    src: local('Kumbh Sans'),
+        url('../../fonts/kumbhsans-variablefont_yopqwght-webfont.woff2') format('woff2'),
+        url('../../fonts/kumbhsans-variablefont_yopqwght-webfont.woff') format('woff'),;
+    font-weight: 0 1000;
+}
+
+html {
+    font-size: map-get(
+        variables.$font,
+        size
+    );
+}
+
+body {
+    font-family: map-get(
+        variables.$font,
+        family
+    );
+    font-size: .75rem;
+    font-weight: map-get(
+        variables.$font,
+        weight,
+        regular
+    );
+    text-align: center;
+}
+
+:is(
+    .name-age span,
+    .data span
+) {
+    font-size: 1rem;
+    font-weight: map-get(
+        variables.$font,
+        weight,
+        bold
+    );
+    letter-spacing: initial;
+}
+
+.name-age { font-size: 1rem; }
+
+.data {
+    font-size: .5rem;
+    letter-spacing: .25ch;
+}

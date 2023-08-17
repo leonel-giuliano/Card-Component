@@ -1,0 +1,175 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Kumbh Sans";
+  font-display: swap;
+  src: local("Kumbh Sans"), url("../../fonts/kumbhsans-variablefont_yopqwght-webfont.woff2") format("woff2"), url("../../fonts/kumbhsans-variablefont_yopqwght-webfont.woff") format("woff");
+  font-weight: 0 1000;
+}
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+:is(.name-age span,
+.data span) {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: initial;
+}
+
+.name-age {
+  font-size: 1rem;
+}
+
+.data {
+  font-size: 0.5rem;
+  letter-spacing: 0.25ch;
+}
+
+body {
+  width: 100%;
+  min-height: 100dvh;
+  color: hsl(0, 0%, 59%);
+  background-color: hsl(185, 75%, 39%);
+  overflow: hidden;
+}
+
+.grid-flow {
+  display: grid;
+  place-items: center;
+}
+
+.flex-flow {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+img[class^=shape] {
+  position: absolute;
+}
+
+.shape-top {
+  top: 0;
+  translate: -50% -50%;
+}
+
+.shape-bottom {
+  bottom: 0;
+  translate: 50% 50%;
+}
+
+.card {
+  grid-template-rows: 3fr 1fr;
+  width: min(20rem, 90%);
+  height: min(22.5rem, 85%);
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem 0 hsl(227, 10%, 46%);
+  overflow-y: hidden;
+  z-index: 1;
+}
+
+.user-wrapper {
+  grid-template-rows: 1fr auto 1fr;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.card-bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.profile {
+  grid-row: 2/3;
+  border-radius: 50%;
+  outline: 0.375rem solid hsl(0, 0%, 100%);
+  z-index: 1;
+}
+
+.description {
+  grid-row: 3/4;
+  height: 75%;
+}
+
+:is(.name-age span,
+.data span) {
+  color: hsl(229, 23%, 23%);
+}
+
+.summary {
+  width: 100%;
+  height: 100%;
+  border-top: 0.0555555556rem solid;
+}
+
+.data {
+  width: min-content;
+  height: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */

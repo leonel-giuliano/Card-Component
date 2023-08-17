@@ -1,0 +1,34 @@
+@use 'sass:map';
+
+$color-base: (
+    primary: (
+        dark-cyan: (185 75% 39%),
+        dark-des-blue: (229 23% 23%),
+        dark-gray-blue: (227 10% 46%),
+    ),
+
+    neutral: (
+        white: (0 0% 100%),
+        dark-gray: (0 0% 59%),
+    ),
+);
+
+$color: ();
+
+@each $type, $value in $color-base {
+    @each $pick, $content in $value {
+        $color: map.deep-merge(
+            $color,
+            ($type: ($pick: hsl($content)))
+        );
+    }
+}
+
+$font: (
+    size: 18px,
+    family: ('Kumbh Sans', sans-serif),
+    weight: (
+        regular: 400,
+        bold: 700,
+    ),
+);
