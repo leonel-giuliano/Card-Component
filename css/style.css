@@ -85,9 +85,13 @@ body {
   letter-spacing: 0.25ch;
 }
 
+html {
+  height: 100%;
+}
+
 body {
-  width: 100%;
-  min-height: 100dvh;
+  width: 100vw;
+  height: inherit;
   color: hsl(0, 0%, 59%);
   background-color: hsl(185, 75%, 39%);
   overflow: hidden;
